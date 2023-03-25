@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css bs -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- css custom -->
+    <link rel="stylesheet" href="./css/index.css">
+    <title>OOP_JS</title>
+</head>
+
+<body>
+    <div class="bg-dark text-white p-3">
+        <a href="/quanlynhanvien.html" class="text-white"> Quản lý nhân viên</a>
+        <a href="/index.html" class="text-white"> Quản lý nhân viên</a>
+        <a href="/index.html" class="text-white mx-2"> Dự án quản lý sinh viên</a>
+    </div>
+    <div class="container" style="margin-bottom:500px ;">
+        <div class="row">
+            <div class="col-6">
+                <h3>Quản lí sinh viên</h3>
+                <div class="form-group">
+                    <p>Mã sinh viên</p>
+                    <input type="text" class="form-control" id="maSinhVien">
+                </div>
+                <div class="form-group">
+                    <p>Tên sinh viên</p>
+                    <input type="text" class="form-control" id="tenSinhVien">
+                </div>
+                <div class="form-group">
+                    <p>Loại sinh viên</p>
+                    <select type="text" class="form-control" id="loaiSinhVien">
+                        <option> Nghèo</option>
+                        <option> Khó Khăn</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Điểm toán</p>
+                    <input type="text" class="form-control" id="diemToan">
+                </div>
+                <div class="form-group">
+                    <p>Điểm văn</p>
+                    <input type="text" class="form-control" id="diemVan">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success" id="btnHienThi">Hiển thị</button>
+                </div>
+            </div>
+            <div class="col-6 mt-4">
+                <h3>Thông tin sinh viên</h3>
+                <div class="alert alert-danger">
+                    Mã sinh viên: <span id="txt_maSinhVien"></span>
+                </div>
+                <div class="alert alert-danger">
+                    Tên sinh viên: <span id="txt_tenSinhVien"></span>
+                </div>
+                <div class="alert alert-danger">
+                    Loại sinh viên: <span id="txt_loaiSinhVien"></span>
+                </div>
+                <div class="alert alert-danger">
+                    Điểm trung bình: <span id="txt_diemTb"></span>
+                </div>
+                <div class="alert alert-danger">
+                    Xếp loại: <span id="txt_XepLoai"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js bs -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="/controllers/index.js"></script>
+</body>
+
+</html>
